@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');	
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+* {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 905px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+#header {
+    width: 100%;
+    height: 90px;
+    background: #111;
+}
+
+.logo {
+    width: 150px;
+    padding: 20px 0 0 0;
+    float: left;
+}
+
+#header ul {
+    position: relative;
+    display: flex;
+    float: right;
+    transition: .5s;
+    margin: 40px 0 0 0;
+}
+
+#header ul li {
+    list-style: none;
+}
+
+#header ul li a {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    transition: .5s ease;
+    color: #fff;
+    border-bottom: 1px solid #111;
+}
+
+#header ul li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+#toggle {
+    display: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    outline: none;
+    text-align: center;
+    z-index: 10001;
+}
+
+
+@media only screen and (max-width: 970px) {
+    
+    #toggle{
+        display: block;
+    }
+
+    #header ul {
+        display: none;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    #header ul.active {
+        display: block;
+    }
+
+    #header ul li a {
+        display: block;
+        background: #111;
+        color: #fff;
+        margin: 0;
+        padding: 20px 30px;
+        border-bottom: 2px solid inherit;
+    }
+
+}
+/*Banner*/
+#banner {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    margin: 0;
+}
+
+#banner .flex {
+    flex-direction: row-reverse;
+}
+
+#banner img {
+    width: 380px;
+}
+
+#banner .details {
+    margin: 0 auto;
+}
+
+#banner .details h1 {
+    font-size: 4.5em;
+    line-height: 1.4em;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+#banner .details h1 span {
+    background: #111;
+    color: #fff;
+    padding: 5px;
+}
+
+#banner .details p {
+    color: rgba(1,1,1,.7);
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+#banner .details p::after  {
+    content: '';
+    background: #111;
+    width: 480px;
+    height: 20px;
+    display: block;
+    margin: 30px 0;
+}
+
+@media only screen and (max-width: 1050px) {
+    #banner img {
+        margin: 0 auto;
+        width: 250px;
+    }
+
+    #banner .details h1 {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+    #banner img {
+        display: none;
+    }
+
+    #banner {
+        padding: 40px 0;
+    }
+
+    #banner .details {
+        text-align: center;
+    }
+
+    #banner .details h1 {
+        font-size: 4.5em;
+    }
+
+    #banner .details p {
+        font-size: 17px;
+    }
+
+    #banner .details p::after {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+
+/*About*/
+#about {
+    width: 100%;
+    padding: 60px 0 0 0;
+    color: #fff;
+    background: #111;
+    height: auto;
+}
+
+#about img {
+    width: 250px;
+}
+
+#about .details {
+    margin: 0 80px;
+}
+
+#about .details h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+
+#about .details p {
+    line-height: 25px;
+    font-size: 20px;
+    margin: 0 0 30px 0 ;
+}
+
+@media only screen and (max-width: 999px) {
+    #about .details p {
+        line-height: 23px;
+    }
+
+    #about .details  h1 {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 905px) {
+    #about {
+        padding: 50px 0;
+    }
+
+    #about img {
+        display: none;
+    }
+
+    #about .details {
+        text-align: center
+    }
+
+    #about .details p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+/*Button*/
+.read-more, .see-products, .see-more {
+    color: #fff;
+    background: rgb(24, 253, 24); 
+    border: 1px solid rgb(24, 253, 24);
+    padding: 10px 15px;
+    margin-top: 20px;  
+    border-radius: 3em;
+    letter-spacing: 3px;
+    font-size: 19px;
+    transition: 1s ease;
+}
+
+.read-more:hover {
+    background: inherit; 
+    border: 1px solid rgb(24, 253, 24);
+    color: rgb(24, 253, 24);
+}
+
+.see-products:hover {
+    background: inherit; 
+    border: 1px solid rgb(24, 253, 24);
+    color: rgb(24, 253, 24);
+}
+
+.see-more:hover {
+    background: inherit; 
+    border: 1px solid rgb(24, 253, 24);
+    color: rgb(24, 253, 24);
+}
+
+
+/*Product*/
+#product {
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+}
+
+#product .flex {
+    flex-direction: row-reverse;
+}
+
+#product img {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#product .details { 
+    margin: 0 auto;
+}
+
+#product .details h1 {
+    font-size: 3em;
+    margin: 0 auto;
+    line-height: 1.4em;
+}
+
+#product .details span {
+    background: #111;
+    color: #fff;
+    padding: 5px;
+}
+
+#product .details p {
+    color: rgba(1,1,1,.8);
+    margin: 20px 0 40px;
+    line-height: 22px;
+}
+
+
+@media only screen and (max-width: 1050px) {
+
+    #product img {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    #product .details h1 {
+        font-size: 2.5em;
+    }
+
+    
+}
+
+@media only screen and (max-width: 905px) {
+    #product img {
+        display: none;
+    }
+
+    #product .details {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #product .details h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+/*Gallery*/
+#gallery {
+    width: 100%;
+    height: auto;
+    background: #dbdbdb;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#gallery .flex {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#gallery h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+#gallery a {
+    width: 345px;
+    height: 300px;
+    margin: 7px 5px;
+    transition: .5s ease;
+}
+
+#gallery a img {
+    width: 345px;
+    height: 300px;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 1088px) {
+    #gallery a {
+        width:48%;
+    }
+}
+
+@media only screen and (max-width: 573px) {
+    #gallery a {
+        margin: 10px auto;
+        width: 80%;
+    }
+}
+
+/*Contact*/
+#contact {
+    width: 100%;
+    background: #111;
+    margin: 0;
+    padding: 50px 0 20px 0;
+}
+
+#contact h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#contact h6 {
+    color: rgba(255,255,255,.5);
+    margin: 10px 0 20px 0;
+    font-size: 15px;
+}
+
+#contact form h4 {
+    color: #fff;
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+}
+
+#contact form input, textarea {
+    outline: none;
+    background: #fff;
+    border: 1px solid rgab(255,255,255,0.6);
+    border-radius: 2em;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+}
+
+#contact form button {
+    border-radius: 3em;
+    background: rgb(24, 253, 24);
+    border: 1px solid rgb(24, 253, 24);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+#contact form button:hover {
+    background: inherit;
+    color: rgb(24, 253, 24);
+    border: 1px solid rgb(24, 253, 24);
+}
+
+#contact .number {
+    margin: 0 auto;
+    color: #fff;
+}
+
+#contact .number h5 {
+    font-size: 20px;
+    margin: 10px 20px;
+    color: #fff;
+}
+
+#contact .number img {
+    width: 30px;
+    background: #fff;
+    border-radius: 3em;
+    padding: 1px;
+}
+
+#contact .number p span{
+    margin: 0 20px;
+}
+
+#contact ul {
+    list-style-type: none;
+}
+
+#contact  li {
+    display: inline-block;
+    color: #fff;
+    margin: 0 10px;
+}
+
+.map {
+    width: 300px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1290px) {
+    #contact .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #contact form {
+        width: 100%;
+    }
+
+    #contact form input {
+        width: 43%;
+        margin: 0 20px 0 0;
+    }
+
+    #contact form textarea {
+        width: 93%;
+    }
+
+    #contact .number h5 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    #contact .number {
+        width: 50%;
+        margin: 30px auto;
+    }
+
+    .map {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+}
+
+@media only screen and (max-width: 839px) {
+    #contact form input {
+        width: 40%;
+    }
+
+    #contact form textarea {
+        width: 87%;
+    }
+}
+
+@media only screen and (max-width: 573px) {
+    #contact form input {
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+    #contact form textarea {
+        width: 90%;
+    }
+} 
+
+
+
+/*Footer*/
+#footer {
+    width: 100%;
+    background: #111;
+    margin: 0;
+    padding: 20px 0 5px 0;
+    bottom: 0;
+}
+
+#footer hr {
+    background: rgba(255,255,255,.2);
+    height: 2px;
+    border: none;
+}
+
+#footer address {
+    color: rgba(255,255,255,.2);
+    font-size: 10px;
+    margin: 20px 0;
+    text-align: center;
+}

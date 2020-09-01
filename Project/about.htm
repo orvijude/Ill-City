@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Ill City</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/another-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <a href="index.htm">
+                <img src="img/illcity.png" alt="Ill City Logo" class="logo">
+            </a>
+            <!-- Nav -->
+            <button id="toggle"><img src="img/burger.svg" alt="menu btn"></button>
+            <nav>
+                <ul id="active">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="product.htm">Products</a></li>
+                    <li><a href="gallery.htm">Gallery</a></li>
+                    <li><a href="contact.htm">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <img src="img/about-bnr.png" alt="banner about" class="about-bnr-img">
+    
+    <div id="about-bnr">
+        <div class="container">
+            <h1>About Ill City</h1>
+            <div class="abt-txt">
+                    Ill City was established in 2014 with the aim to promote our
+                    hometown, Iloilo City, through urban street fashion. Iloilo is
+                    the city of love and we wanted to provide Ilonggos with a medium
+                    for displaying their love for the city. Our designs showcase some
+                    of the city's historic monuments that symbolize how significant 
+                    our South Town is. Ill City Clothing is jam packed with mean, 
+                    not just style.
+                    <br>
+                    <br>
+                    We want to encourage our generation to be genuinely proud of you
+                    hometown, your roots. Revive the old school patriotism through new school
+                    urban street style. No matter where you are in the world, carry your culture
+                    and your hometown with you.
+                    <br>
+                    <br>
+                    Ill City isn't your ordinary retail fashion hub. we've got big dreams and 
+                    Ill City Clothing is going places. Ultimately, we want to make every
+                    city an Ill City. And ecentually maybe even world domination! But we'll
+                    keep our dreams in check for now and focus on bringing you 
+                    something to be proud about. Represent your Ill City, 
+                    be united by the place you call home.
+            </div>
+        </div>
+    </div>
+
+    <div id="owner">
+        <div class="container">
+            <h1>Owner of Ill City</h1>
+            <img src="img/bam.jpg" alt="bam" class="bam">
+            <h2>Bam Araneta</h2>
+            <a href="https://www.facebook.com/bam.araneta">
+                <img src="img/icon/facebook.svg" alt="facebook logo">
+            </a>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <hr>
+            <address>COPYRIGHTS &copy; 2019 | ALL RIGHTS RESERVED</address>
+        </div>
+    </footer>
+
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('#active').toggle();
+            })
+        })
+    </script>
+</body>
+</html>

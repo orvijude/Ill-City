@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/another-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <a href="index.htm">
+                <img src="img/illcity.png" alt="Ill City Logo" class="logo">
+            </a>
+            <!-- Nav -->
+            <button id="toggle"><img src="img/burger.svg" alt="menu btn"></button>
+            <nav>
+                <ul id="active">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="product.htm">Products</a></li>
+                    <li><a href="gallery.htm">Gallery</a></li>
+                    <li><a href="contact.htm">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <h6>Don't be a Stranger, Go say Hi</h6>
+            <div class="flex">
+            <form>
+                <h4>How can we help you?</h4>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <br>
+                <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                <br>
+                <button>Send Message</button>
+            </form>
+            <div class="number">
+                <h5>Call us</h5>
+                    <p><img src="img/icon/phone.svg" alt="phone logo"><span>(033) 501 0318</span></p>
+                <h5>Visit us</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/illcityclothing033"><img src="img/icon/facebook.svg" alt="facebook logo"></a></li>
+                        <li><a href="https://www.instagram.com/illcityclothing033/?hl=en"><img src="img/icon/instagram.svg" alt="instagram logo"></a></li>
+                    </ul>
+            </div>
+            <img src="img/illcitymap.jpg" alt="map of ill city shop" class="map">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <hr>
+            <address>COPYRIGHTS &copy; 2019 | ALL RIGHTS RESERVED</address>
+        </div>
+    </footer>
+
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('#active').toggle();
+            })
+        })
+    </script>
+
+</body>
+</html>

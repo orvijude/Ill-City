@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ill City</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <a href="index.htm">
+                <img src="img/illcity.png" alt="Ill City Logo" class="logo">
+            </a>
+            <!-- Nav -->
+            <button id="toggle"><img src="img/burger.svg" alt="menu button"></button>
+            <nav>
+                <ul id="active">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="about.htm">About</a></li>
+                    <li><a href="product.htm">Products</a></li>
+                    <li><a href="gallery.htm">Gallery</a></li>
+                    <li><a href="contact.htm">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div id="banner">
+        <div class="container">
+            <div class="flex">
+            <img src="img/banner.png" alt="Respect png">
+            <div class="details">
+               <h1>
+                   Respect the 
+                   <br>
+                   <span>Culture</span>
+               </h1>
+               <p>
+                   Open Daily 
+                   <br>
+                   Monday to Sunday 
+                   <br>
+                   12NN to 9PM
+                   <br>
+                   <br>
+                   Monkey Grounds Coffee,
+                   <br>
+                   Basement Parking
+                   <br>
+                   Diversion Road Iloilo City
+               </p>
+               <div class="box"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="flex">
+                <img src="img/about.png" alt="about picture">
+                <div class="details">
+                    <h1>Ill City</h1>
+                    <p>
+                        Ill City was established in 2014 with the aim to promote our
+                        hometown, Iloilo City, through urban street fashion. Iloilo is
+                        the city of love and we wanted to provide Ilonggos with a medium
+                        for displaying their love for the city. Our designs showcase some
+                        of the city's historic monuments that symbolize how significant 
+                        our South Town is. Ill City Clothing is jam packed with mean, 
+                        not just style.
+                    </p>
+                    <a href="about.htm" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product -->
+    <div id="product">
+        <div class="container">
+            <div class="flex">
+                <img src="img/product.png" alt="product pic">
+                <div class="details">
+                    <h1>
+                        Southtown 
+                        <br>
+                        Repesent 
+                        <br>
+                        Zero Treinta Y Tres
+                        <br>
+                        <span>#StreetwearApparel</span>
+                    </h1>
+                    <p>
+                        Visit our friendly neighboorhood store
+                        <br>
+                        Located at
+                        <br>
+                        Monkey Grounds Coffee, Basement Parking
+                        <br>
+                        Diversion Road Iloilo City
+
+                    </p>
+                    <a href="product.htm" class="see-products">See Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery">
+        <div class="container">
+            <h1>Gallery</h1>
+            <div class="flex">
+                <a href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" alt=""></a>
+                <a href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" alt=""></a>
+                <a href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" alt=""></a>
+                <a href="img/gallery/17.jpg"><img src="img/gallery/17.jpg" alt=""></a>
+                <a href="img/gallery/7.jpeg"><img src="img/gallery/7.jpeg" alt=""></a>
+                <a href="img/gallery/22.jpg"><img src="img/gallery/22.jpg" alt=""></a>
+            </div>
+            <a href="gallery.htm" class="see-more">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <h6>Don't be a Stranger, Go say Hi</h6>
+            <div class="flex">
+            <form>
+                <h4>How can we help you?</h4>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <br>
+                <textarea placeholder="Message" cols="30" rows="10"></textarea>
+                <br>
+                <button>Send Message</button>
+            </form>
+            <div class="number">
+                <h5>Call us</h5>
+                    <p><img src="img/icon/phone.svg" alt="phone logo"><span>(033) 501 0318</span></p>
+                <h5>Visit us</h5>
+                    <ul>
+                        <li><a href="https://www.facebook.com/illcityclothing033"><img src="img/icon/facebook.svg" alt="facebook logo"></a></li>
+                        <li><a href="https://www.instagram.com/illcityclothing033/?hl=en"><img src="img/icon/instagram.svg" alt="instagram logo"></a></li>
+                    </ul>
+            </div>
+            <img src="img/illcitymap.jpg" alt="map of ill city shop" class="map">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <hr>
+            <address>COPYRIGHTS &copy; 2019 | ALL RIGHTS RESERVED</address>
+        </div>
+    </footer>
+
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('#active').toggle();
+            })
+        })
+    </script>
+</body>
+</html>
